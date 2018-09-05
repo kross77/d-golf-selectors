@@ -10,6 +10,7 @@ const getPageRewards = state =>
 const getTotal = state =>
   state.data.pages.find(v => v.id && v.id === "page-rewards").total;
 
+const newLine = "test";
 const getLoyalty = createSelector(
   loyalty,
   getPageRewards,
